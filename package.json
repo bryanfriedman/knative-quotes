@@ -1,0 +1,25 @@
+{
+  "name": "knative-quotes",
+  "version": "1.0.0",
+  "description": "Quotes Service",
+  "main": "quotes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node quotes.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanfriedman/knative-quotes.git"
+  },
+  "author": "Bryan Friedman",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bryanfriedman/knative-quotes/issues"
+  },
+  "homepage": "https://github.com/bryanfriedman/knative-quotes#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.81.0"
+  }
+}
