@@ -15,6 +15,10 @@ app.post("/", function(req, res) {
         console.log(body.quoteAuthor);
         text = body.quoteText;
         author = body.quoteAuthor;
+        if (text === undefined) {
+            console.log("UNDEFINED");
+            res.status(500).send("Error");
+        }
         res.send(text + "  -" + author);
     });
 
