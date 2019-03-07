@@ -18,8 +18,9 @@ app.post("/", function(req, res) {
         if (text === undefined) {
             console.log("UNDEFINED");
             res.status(500).send("Error");
+        } else {
+            res.send(text + "  -" + author);
         }
-        res.send(text + "  -" + author);
     });
 
 });
