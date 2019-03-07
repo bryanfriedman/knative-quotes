@@ -16,8 +16,9 @@ app.post("/", function(req, res) {
         text = body.quoteText;
         author = body.quoteAuthor;
         if (text === undefined) {
-            console.log("UNDEFINED");
-            res.status(500).send("Error");
+            setInterval(function() {
+                res.end();
+            }, 10000); // don't return anything, fallback 
         } else {
             res.send(text + "  -" + author);
         }
